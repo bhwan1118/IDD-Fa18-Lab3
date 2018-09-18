@@ -73,11 +73,19 @@ When there is nothing in proximity to the sensor the value of Proximity is rough
 
 **a. Does it matter what actions are assigned to which state? Why?**
 
+It does matter that the order of actions makes sense. For example, if you had a sequence write -> clear -> read, you would never be able to read what you wrote to the board.
+
 **b. Why is the code here all in the setup() functions and not in the loop() functions?**
+
+You don't want to continuously write, clear, or read data from the board. Data should be written once and then read/cleared once. I suspect that continuously writing to a board would be cumbersome and even potentially lead to errors.
 
 **c. How many byte-sized data samples can you store on the Atmega328?**
 
+The Atmega328 contains 1024 bytes, thus 1024 byte data samples.
+
 **d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
+
+For the analog pins, the values of the readings are already converted to a range from 0-1024 so this wouldn't be a problem? For I2C you would have to make sure that you scale the full range of readings to a 0-1024 scale. For example, if you had a I2C range of 0-10,000 you and you were registering a value of 5,000 you could scale it by (5000*1000)/10000 = 500 which is within the range of the arduino
 
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
