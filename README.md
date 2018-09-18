@@ -26,11 +26,11 @@ I think this is just adding resistors in parallel...not sure.
 
 **a. What voltage values do you see from your force sensor?**
 
-The values range from 0-1000
+The values range from 0 to approximately 5 volts
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
-It appears to be a linear relationship. As force increases the voltage values increase until it hits a limit of 1000. Similarly as you stop applying force the values drop to 0.
+It appears to be a linear relationship. As force increases the voltage values increase until it hits a limit of 5. Similarly as you stop applying force the values drop to 0.
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
@@ -106,3 +106,4 @@ It appears that a way to accomplish this is to directly specify multiple machine
 ### 3. Create your data logger!
  
 **a. Record and upload a short demo video of your logger in action.**
+Ran out of time :( see code [here](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/FSR_Read_Write.ino) for my attempt
