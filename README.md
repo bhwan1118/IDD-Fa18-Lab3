@@ -94,11 +94,14 @@ It appears that a way to accomplish this is to directly specify multiple machine
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
 
 [Ambient Sensor EEPROM code: Main ](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/ModifiedSwitchState.ino)
+
 [Ambient Sensor EEPROM code: Write ](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/state2.ino)
 
 ### 2. Design your logger
  
 **a. Insert here a copy of your final state diagram.**
+
+![image](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/State%20Diagram.jpg)
 
 ### 3. Create your data logger!
  
