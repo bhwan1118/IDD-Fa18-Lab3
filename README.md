@@ -57,7 +57,11 @@ It's roughly linear?
 
 **a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
 
+When there is nothing in proximity to the sensor the value of Proximity is roughly 2200 and Ambient is 110. When I touch the sensor the value goes all the way up to 65,000 in proximity and ambient drops to around 7. As I move my finger closer it seems that the voltage change increases exponentially up to the upper bound listed.
+
 **b. Upload your merged code to your lab report repository and link to it here.**
+
+[Merged Code](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/Merged_Prox_Accel.ino)
 
 ## Optional. Graphic Display
 
