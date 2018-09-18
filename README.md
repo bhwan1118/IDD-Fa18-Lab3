@@ -18,23 +18,40 @@ It has 10 bits of resolution which makes sense with the value above since 2^10 i
 
 **How might you use this with only the parts in your kit? Show us your solution.**
 
+I think this is just adding resistors in parallel...not sure.
+
 ## Part C. Voltage Varying Sensors 
  
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
 
 **a. What voltage values do you see from your force sensor?**
 
+The values range from 0-1000
+
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
+
+It appears to be a linear relationship. As force increases the voltage values increase until it hits a limit of 1000. Similarly as you stop applying force the values drop to 0.
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
+[Code](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/LED_Fade_Code.ino)
+
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
 
+Flex Sensor : Range of resistances = 25,000 Ohms to 100,000 ohms
+Softpot : min is 10k?
+Photocell : min 5-10 k up to 200 K ohms
+
+
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
+
+It's roughly linear?
 
 ### 2. Accelerometer
  
 **a. Include your accelerometer read-out code in your write-up.**
+
+[Code (to modify)](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/LED_Display_Accel.ino)
 
 ### 3. IR Proximity Sensor
 
