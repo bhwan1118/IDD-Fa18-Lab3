@@ -89,7 +89,12 @@ For the analog pins, the values of the readings are already converted to a range
 
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
+It appears that a way to accomplish this is to directly specify multiple machine addresses for where to store each piece of the data so that you can store something bigger than a single byte.
+
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
+
+[Ambient Sensor EEPROM code: Main ](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/ModifiedSwitchState.ino)
+[Ambient Sensor EEPROM code: Write ](https://github.com/bhwan1118/IDD-Fa18-Lab3/blob/master/state2.ino)
 
 ### 2. Design your logger
  
